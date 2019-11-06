@@ -10,7 +10,7 @@ h3 {
 
 .wilburGame {
   display: none;
-  background-image: url("img/wilbur.jpg");
+  background-image: url("../img/wilbur.jpg");
 }
 
 #jumboWilbur {
@@ -19,7 +19,7 @@ h3 {
 
 .babeGame {
   display: none;
-  background-image: url("img/babe.jpg");
+  background-image: url("../img/babe.jpg");
 }
 
 #jumboBabe {
