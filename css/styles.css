@@ -3,6 +3,10 @@ body {
   margin: auto;
 }
 
-.babeTurn {
+.wilburGame {
+  display: none;
+}
+
+.babeGame {
   display: none;
 }

@@ -15,24 +15,41 @@
           <div class="runningTotals">
             <h1>Wilbur!</h1>
             <p>Your Turn Total is: <span id="wilburTurnTotal"></span></p>
-            <p>Your Game Total is:<span id="wilburGameTotal"></span></p>
-            <div class="wilburTurn">
-              <h4>Wilbur, it's your turn!</h4>
-              <button type="button" id="wilburHold" name="button">Hold</button>
-            </div>
+            <p>Your Game Total is: <span id="wilburGameTotal"></span></p>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="game">
-            <div class="jubotron">
 
-            </div>
-              <h1 id="roll"></h1>
-              <div id="buttons">
-              </div>
+          <div class="gameStart">
+            <button type="button" id="start" name="button">Start</button>
 
           </div>
-          <button type="button" id="start" name="button">Start!</button>
+          <div class="wilburGame">
+            <div class="jumbotron">
+              <h1>Wilbur's Turn</h1>
+            </div>
+              <div id="turnRoll">
+                <p>You just rolled a: </p><h1 id="wilburTurnRoll"></h1>
+              </div>
+              <button type="button" id="wilburRoll" name="button">Roll!</button>
+              <button type="button" id="wilburHold" name="button">Hold!</button>
+          </div>
+
+
+          <div class="babeGame">
+            <div class="jumbotron">
+              <h1>Babe's Turn</h1>
+            </div>
+              <p>You just rolled a: </p><h1 id="roll"></h1>
+              <div id="turnRoll">
+                <h1 id="babeTurnRoll"></h1>
+              </div>
+
+              <button type="button" id="babeRoll" name="button">Roll!</button>
+              <button type="button" id="babeHold" name="button">Hold!</button>
+          </div>
+
+
 
         </div>
         <div class="col-sm-3" id="babeDisplay">
@@ -40,10 +57,7 @@
             <h1>Babe!</h1>
             <p>Your Turn Total is: <span id="babeTurnTotal"></span></p>
             <p>Your Game Total is: <span id="babeGameTotal"></span></p>
-            <div class="babeTurn">
-              <h4>Babe, it's your turn!</h4>
-              <button type="button" id="babeHold" name="button">Hold</button>
-            </div>
+
           </div>
         </div>
 
