@@ -23,16 +23,18 @@ function diceRoll(min, max) {
 
 // FRONT-END LOGIC
 
-var pig1 = new Pig(0, 0, "Wilbur");
-var pig2 = new Pig(0, 0, "Babe");
-
 $(document).ready(function() {
+
+  var pig1 = new Pig(0, 0, "Wilbur");
+  var pig2 = new Pig(0, 0, "Babe");
+
   $("button#start").click(function() {
     $(".gameStart").hide();
     $(".wilburGame").show();
   });
 
   $("button#wilburRoll").click(function() {
+
     var roll = diceRoll(1, 6);
     $("#babeTurnRoll").text("");
     if (roll === 1) {
@@ -49,6 +51,7 @@ $(document).ready(function() {
   });
 
   $("button#babeRoll").click(function() {
+
     var roll = diceRoll(1, 6);
     $("#wilburTurnRoll").text("");
     if (roll === 1) {

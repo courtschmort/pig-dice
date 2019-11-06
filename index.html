@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3" id="wilburDisplay">
-          <div class="runningTotals">
-            <h1>Wilbur!</h1>
-            <p>Your Turn Total is: <span id="wilburTurnTotal"></span></p>
-            <p>Your Game Total is: <span id="wilburGameTotal"></span></p>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-3" id="wilburDisplay">
+        <div class="runningTotals">
+          <h3>Wilbur</h3>
+          <p>Your Turn Total is: <span id="wilburTurnTotal"></span></p>
+          <p>Your Game Total is: <span id="wilburGameTotal"></span></p>
         </div>
-        <div class="col-sm-6">
-
-          <div class="gameStart">
-            <button type="button" id="start" name="button">Start</button>
-
-          </div>
-          <div class="wilburGame">
-            <div class="jumbotron">
-              <h1>Wilbur's Turn</h1>
-            </div>
-              <div id="turnRoll">
-                <p>You just rolled a: </p><h1 id="wilburTurnRoll"></h1>
-              </div>
-              <button type="button" id="wilburRoll" name="button">Roll!</button>
-              <button type="button" id="wilburHold" name="button">Hold!</button>
-          </div>
-
-
-          <div class="babeGame">
-            <div class="jumbotron">
-              <h1>Babe's Turn</h1>
-            </div>
-              <p>You just rolled a: </p><h1 id="roll"></h1>
-              <div id="turnRoll">
-                <h1 id="babeTurnRoll"></h1>
-              </div>
-
-              <button type="button" id="babeRoll" name="button">Roll!</button>
-              <button type="button" id="babeHold" name="button">Hold!</button>
-          </div>
-
-
-
+      </div>
+      <div class="col-sm-6">
+        <div class="gameStart">
+          <button type="button" id="start" name="button">Start</button>
         </div>
-        <div class="col-sm-3" id="babeDisplay">
-          <div class="runningTotals">
-            <h1>Babe!</h1>
-            <p>Your Turn Total is: <span id="babeTurnTotal"></span></p>
-            <p>Your Game Total is: <span id="babeGameTotal"></span></p>
 
+        <div class="wilburGame">
+          <div class="jumbotron" id="jumboWilbur">
+            <h1>Wilbur's Turn</h1>
           </div>
+          <div id="turnRoll">
+            <p>You just rolled a: </p><h1 id="wilburTurnRoll"></h1>
+          </div>
+          <button type="button" id="wilburRoll" name="button">Roll!</button>
+          <button type="button" id="wilburHold" name="button">Hold!</button>
+        </div>
+
+        <div class="babeGame">
+          <div class="jumbotron" id="jumboBabe">
+            <h1>Babe's Turn</h1>
+          </div>
+          <p>You just rolled a: </p><h1 id="roll"></h1>
+          <div id="turnRoll">
+            <h1 id="babeTurnRoll"></h1>
+          </div>
+
+          <button type="button" id="babeRoll" name="button">Roll!</button>
+          <button type="button" id="babeHold" name="button">Hold!</button>
         </div>
 
       </div>
+      <div class="col-sm-3" id="babeDisplay">
+        <div class="runningTotals">
+          <h3>Babe</h3>
+          <p>Your Turn Total is: <span id="babeTurnTotal"></span></p>
+          <p>Your Game Total is: <span id="babeGameTotal"></span></p>
 
-
-
+        </div>
+      </div>
 
     </div>
 
 
-  </body>
+
+
+  </div>
+
+
+</body>
 </html>
